@@ -4,7 +4,7 @@
   <body>
     <h1>Example - Spring Application</h1>
     <p>This is my test.</p>
-    <a href="hello.htm">Hello</a>
-    <a href="servicio.htm">Servicio</a>
+    <a href="hello.htm" class="btn bt-warning">Hello</a>
+    <a href="servicio.htm" class="btn bt-success">Servicio</a>
   </body>
 </html>
