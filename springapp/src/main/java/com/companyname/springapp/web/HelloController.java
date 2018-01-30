@@ -20,7 +20,7 @@ public class HelloController {
     @RequestMapping(value="/hello.htm")
     public ModelAndView handleRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-
+    	
 
         String now = (new Date()).toString();
         logger.info("Returning hello view with " + now);
@@ -33,8 +33,15 @@ public class HelloController {
     public ModelAndView llamarServicios(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
+    	String nombre = "Borja";
+    	
+  
+    	
         logger.info("Returning servicio view");
 
-        return new ModelAndView("servicio.jsp");
+        return new ModelAndView("servicio.jsp", "minombre", nombre);
+        
+        
+    	
     }
 }
