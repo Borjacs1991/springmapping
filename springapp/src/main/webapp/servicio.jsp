@@ -10,5 +10,6 @@
 <body>
 <h2>Servicios</h2>
 <p> Esto es una makina</p>
+<a href="index.jsp" class="btn btn-warning">Go back</a>
 </body>
 </html>

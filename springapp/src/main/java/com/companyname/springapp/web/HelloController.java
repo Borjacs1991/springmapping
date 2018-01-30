@@ -5,6 +5,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import java.util.Date;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.stereotype.Controller;
@@ -20,9 +21,12 @@ public class HelloController {
     public ModelAndView handleRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-        logger.info("Returning hello view");
 
-        return new ModelAndView("hello.jsp");
+        String now = (new Date()).toString();
+        logger.info("Returning hello view with " + now);
+
+        return new ModelAndView("hello.jsp", "now", now);
+        
     }
     
     @RequestMapping(value="/servicio.htm")
