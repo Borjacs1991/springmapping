@@ -52,7 +52,6 @@ public class HelloController {
 
     	String nombre = "Borja";
     	
-  
     	
         logger.info("Returning servicio view");
 
