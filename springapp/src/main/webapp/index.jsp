@@ -1,7 +1,7 @@
   <%@ include file="/WEB-INF/views/include.jsp" %>
 <html>
   <head><title>Example :: Spring Application</title>
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+ 
 	<style>
 	ul li a {
 	 color:green;
@@ -49,11 +49,16 @@
 
 
 	
+		<div class="jumbotron">
+		  <h1 class="display-4">Hello, world!</h1>
+		  <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+		  <hr class="my-4">
+		  <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+		  <p class="lead">
+		    <a class="btn btn-success btn-lg" href="#" role="button">Learn more</a>
+		  </p>
+		</div>
 
-
-
-    <h1>Bienvenido a la pagina principal</h1>
-    <p>This is my test.</p>
     <%-- Redirected because we can't set the welcome page to a virtual URL.	<c:redirect url="/hello.htm"/> --%>
   </body>
 </html>
